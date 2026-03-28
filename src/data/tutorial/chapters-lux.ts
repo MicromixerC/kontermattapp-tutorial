@@ -153,7 +153,7 @@ export const chaptersLux: TutorialChapter[] = [
       },
       {
         title: 'Generell Reegelen',
-        description: 'Et gëtt 2 Reegelen, déi iwwert dem ganze Spill stinn:\n\n 1) Et kann en ëmmer eng Tromp spillen.\n\n2) Wann e keng Tromp spillt, muss en ëmmer bekennen (virausgesat et huet een eng Kaart vun där Faarf an der Hand).',
+        description: 'Et gëtt 2 Reegelen, déi iwwert dem ganze Spill stinn:\n\n 1) Et kann en ëmmer eng Tromp spillen.\n\n2) Wann e keng Tromp spillt, muss e bekennen (virausgesat et huet een eng Kaart vun där Faarf an der Hand).',
         image: '',
         highlights: []
       },
@@ -171,7 +171,7 @@ export const chaptersLux: TutorialChapter[] = [
       },
       {
         title: 'B) Am einfache Streech',
-        description: 'Am einfache Streech ass déi éischt Kaart vum Streech keng Tromp.\n\n1. Et KANN en eng Tromp spillen oder et muss e bekennen.\n2. Wann e keng Kaart vun der selwechter Faarf huet, kann en all aner Kaart spillen.',
+        description: 'Am einfache Streech ass déi éischt Kaart vum Streech keng Tromp.\n\n1. Et KANN en eng Tromp spillen oder et muss e bekennen.\n2. Wann e keng (Net-Tromp-)Kaart vun der selwechter Faarf huet, kann en all aner Kaart spillen. Et muss e weiderhi net eng Tromp spillen, wann en eng huet.',
         image: '',
         highlights: []
       }
