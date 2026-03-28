@@ -1,4 +1,0 @@
-0000000000000000000000000000000000000000 5806c9e5654b51d7c1500dd7663f098b4020ceaf Charel Simon <charelsimon@gmail.com> 1774692981 +0100	commit (initial): Initial tutorial setup
-5806c9e5654b51d7c1500dd7663f098b4020ceaf 0000000000000000000000000000000000000000 Charel Simon <charelsimon@gmail.com> 1774692981 +0100	Branch: renamed refs/heads/master to refs/heads/main
-0000000000000000000000000000000000000000 5806c9e5654b51d7c1500dd7663f098b4020ceaf Charel Simon <charelsimon@gmail.com> 1774692981 +0100	Branch: renamed refs/heads/master to refs/heads/main
-5806c9e5654b51d7c1500dd7663f098b4020ceaf 71e76dfa5057f814a564dc0ba4c31fc1e9e14430 Charel Simon <charelsimon@gmail.com> 1774695378 +0100	commit: Trigger deploy
