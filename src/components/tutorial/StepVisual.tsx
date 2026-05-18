@@ -203,12 +203,12 @@ const TrumpRankChart: React.FC = () => {
   const count = rawCards ? rawCards.filter(c => c !== '|').length : 0;
   const suitName = SUITS.find(s => s.id === trump)?.name ?? '';
   
-  // Define non-trump card orders (A>K>Q>J>10>9, but Q only for diamonds)
+  // Define non-trump card orders (A>K>Q>J>10>9, but Q only for clubs)
   const getNonTrumpCards = (suitId: string): string[] => {
     const suit = SUITS.find(s => s.id === suitId);
     if (!suit) return [];
     
-    if (suitId === 'diamonds') {
+    if (suitId === 'clubs') {
       return [`${suit.sym}A`, `${suit.sym}K`, `${suit.sym}Q`, `${suit.sym}J`, `${suit.sym}10`, `${suit.sym}9`];
     } else {
       return [`${suit.sym}A`, `${suit.sym}K`, `${suit.sym}J`, `${suit.sym}10`, `${suit.sym}9`];
