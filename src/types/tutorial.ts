@@ -16,6 +16,8 @@ export interface MiniGameScenario {
     player: string;
   }>;
   simpleCards?: string[];
+  /** Exact card that was led (preferred over leadSuit when present) */
+  leadCard?: string;
   trumpSuit?: string;
   leadSuit?: string;
   gameInfo?: {

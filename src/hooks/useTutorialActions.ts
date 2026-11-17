@@ -60,9 +60,12 @@ export const useTutorialActions = ({
     const stepData = chapter?.steps[currentStep];
     if (isMiniGameStep(stepData) && stepData.miniGame.scenarios) {
       const variantKey = `${activeChapter}-${currentStep}`;
-      const current = miniGameVariants[variantKey] || 0;
-      const next = (current + 1) % stepData.miniGame.scenarios.length;
-      setMiniGameVariants(prev => ({ ...prev, [variantKey]: next }));
+      const totalScenarios = stepData.miniGame.scenarios.length;
+      setMiniGameVariants(prev => {
+        const current = prev[variantKey] || 0;
+        const next = (current + 1) % totalScenarios;
+        return { ...prev, [variantKey]: next };
+      });
     }
   };
 

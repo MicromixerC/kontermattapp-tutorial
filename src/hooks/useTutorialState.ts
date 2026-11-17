@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export const useTutorialState = () => {
-  const [activeChapter, setActiveChapter] = useState<string | null>(null);
+  const [activeChapter, setActiveChapter] = useState<string | null>('intro');
   const [currentStep, setCurrentStep] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [gameScore, setGameScore] = useState(0);
@@ -17,7 +17,7 @@ export const useTutorialState = () => {
   };
 
   const resetTutorialState = () => {
-    setActiveChapter(null);
+    setActiveChapter('intro');
     setCurrentStep(0);
     setSelectedAnswer(null);
     setShowResult(false);
@@ -28,9 +28,9 @@ export const useTutorialState = () => {
     setMiniGameVariants({});
   };
 
-  const openChapter = (chapterId: string) => {
+  const openChapter = (chapterId: string, startStep?: number) => {
     setActiveChapter(chapterId);
-    setCurrentStep(0);
+    setCurrentStep(startStep ?? 0);
     resetStepState();
     setGameScore(0);
     setQuizAnswers({});
